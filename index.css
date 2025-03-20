@@ -25,7 +25,7 @@ body{
     margin-left: 0.5rem;
 }
 .a{
-    border: 0;
+    /* border: solid rgba(53, 54, 52, 0.604); */
     font-size: 1.1rem;
 }
 .b{
@@ -51,4 +51,11 @@ body{
     font-family: Arial, sans-serif  !important;
     font-size: 1rem;
 }
+/* input{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+
 

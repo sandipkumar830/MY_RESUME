@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(249, 248, 249);
+    font-family:'Times New Roman', Times, serif
+    
+}
+
+.file{
+    margin-left: 0.5rem;
+    margin-top: 5rem;
+    font-size: 1rem;
+    
+}
+.a{
+    width: 72rem;
+    height: 13rem;
+    background-color: rgb(246, 249, 249);
+    color: white;
+    border: solid white;
+    display: flex;
+    border: 0rem;
+    border-radius: 1rem;
+   
+}
+.b{
+    width: 13rem;
+    height: 13rem;
+    background-color: rgb(222, 209, 184);
+    border-radius: 12rem;
+    text-align: center;
+    color: black;
+   
+}
+.c{
+    width: 53rem;
+    height: 7rem;
+    background-color: rgb(245, 245, 245);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    
+}
+.inp{
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 0rem;
+    background-color: rgb(250, 250, 250);
+    border: 0;
+}
+.gra{
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 6rem;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 1rem;
+    width: 44rem;
+}
+.d{
+    width: 13rem;
+    height: 32rem;
+    background-color: white;
+    /* margin-bottom: 1rem; */
+    border: solid black;
+    margin-left: 20rem;
+    
+}
+.fa-solid fa-phone-volume{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    border: 0;
+}
+.f{
+    width: 13rem;
+    height: 12rem;
+    background-color: green;
+   
+}
+
+
+.middle{
+    height: 60rem;
+    width: 72rem;
+    background-color:  rgba(249, 248, 249, 0.899);
+    display: flex;
+}
+.left{
+    height: 50rem;
+    width: 14rem;
+    background-color: rgb(201, 200, 202);
+    text-align: center;
+    border: solid white;
+    border-radius: 1rem;
+}
+
+.right{
+    height: 50rem;
+    width: 55rem;
+    background-color: rgba(134, 118, 149, 0.899);
+    margin-left: 1rem;
+    border: dotted black;
+    border-radius: 1rem;
+
+}
+.y{
+    width: 46rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 0rem;
+    margin-left: 0rem;
+}
+.date{
+    margin-left: 45rem;
+    margin-bottom: 10rem;
+}
+.t{
+    width: 37rem;
+}
+.text{
+    width: 46rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: 0rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 13rem;
+    font-size: 1rem;
+}
+.sum{
+    width: 50rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    border: 0rem;
+    font-weight: 13rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+h3{
+    text-align: center;
+
+
+}
