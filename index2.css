@@ -1,0 +1,50 @@
+.container{
+    height: 58rem;
+    width: 45rem;
+background-color: rgba(255, 255, 255, 0.204);
+border-radius: 1rem;
+
+}
+.name{
+    text-align: center;
+}
+.role{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+}
+
+
+.personal_info{
+    background-color: white;
+    height: 9.5rem;
+    border-radius: 1rem;
+
+}
+.summary{
+    height: 7rem;
+    margin-left: 1rem;
+
+}
+
+.company{
+    font-size: 1.1rem;
+}
+.work-experience{
+    display: flex;
+    background-color: white;
+}
+.work{
+    margin-left: 1rem;
+}
+.edu{
+    margin-left: 1rem;
+}
+.years{
+    width: 40rem;
+    height: 22rem;
+}
+.certificates{
+    background-color:white;
+}
