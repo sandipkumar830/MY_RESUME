@@ -6,84 +6,306 @@
     <title>Templete</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="userDetails.css" />
 </head>
 <body>
-    <div class="container">
+    <div class="detailsAndButton">
+        <div class="personalAndEducation">
+          <div class="personalDetails">
+            <h2>Personal Details</h2>
+            <label for="userName" class="form-label">Name :</label>
+           
+            <input type="text" placeholder="Enter your Name" id="userName"  class="form-control">
+            <label for="userProfession">Profession</label>
+            <input
+              type="text"
+              id="userProfession"
+              placeholder="Enter your profession"
+            />
+            <label for="userEmail">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your Email id"
+              id="userEmail"
+            />
+            <label for="userContact">Contact</label>
+            <input
+              type="text"
+              placeholder="Enter your contact number"
+              id="userContact"
+            />
+            <label for="userLinkedIn">LinkedIn</label>
+            <input
+              type="text"
+              placeholder="Enter your LinkedIn Link"
+              id="userLinkedIn"
+            />
+            <label for="userGitHub">GitHub</label>
+            <input
+              type="text"
+              placeholder="Enter your GitHub Link"
+              id="userGitHub"
+            />
+          </div>
+  
+          <div class="educationDetails">
+            <h2>Education</h2>
+  
+            <label for="userGrad">Graduation</label>
+            <input
+              type="text"
+              id="userGrad"
+              placeholder="Enter your collage name"
+            />
+           
+  
+            <select id="city" name="city">
+              <option value="chooseCity">Choose The City</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Banglore">Banglore</option>
+              <option value="Kanpur">Kanpur</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Goa">Goa</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Agra">Agra</option>
+            </select>
+            <label for="post">Post-Graduation</label>
+            <input
+              type="text"
+              placeholder="Enter your collage name"
+              id="userPostGrad"
+            />
+  
+            <select id="city1" name="city">
+              <option value="chooseCity">Choose The City</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Banglore">Banglore</option>
+              <option value="Kanpur">Kanpur</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Goa">Goa</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Agra">Agra</option>
+            </select>
+  
+            <h2>Projects</h2>
+  
+            <textarea
+              placeholder="Enter your project details here"
+              rows="4"
+            ></textarea>
+            <!-- <input type="file" id="my-image" accept="image/*"/> -->
+            <!-- <div id="display_image"></div> -->
+            <div class="hero">
+            
+              
+                 <input type="file" accept="image/*" id="input-file">
+                 </div>
+            
+          </div>
+  
+          <div class="skilll">
+            <h2>Skill</h2>
+           <div class="skilll">
+              <textarea id="skill-list" placeholder="Enter your skill here" rows="4"></textarea>
+              <h2>Languages</h2>
+              <input type="text" id="len" placeholder="Enter language"/>
+             
+            </div>
+           
+            
+  
+            <h2>Experience details</h2>
+  
+            <div id="experienceAndButton">
+              <textarea
+                placeholder="Enter your experience"
+                rows="4"
+                class="form-control work-experiance"
+                id="experieneDetilsUser"
+              >
+            </textarea>
+            
+              <button
+                onclick="addNewFields()"
+                id="addNewFields"
+                class="experienceAndButton"
+              >
+                Add
+              </button>
+            </div>
+            <h2>Summary</h2>
+            <textarea placeholder="Enter your summary here" rows="4" id="summary"></textarea>
+            <h2>Achievement</h2>
+            <input type="text" id="achivement">
+          </div>
+          
+        </div>
+        <button class="previewButton" onclick="generateResume()">Preview</button>
+      </div> <br><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+  
+  
+      <div class="container">
         <div class="left-container">
-            <div class="img">
-                <img src="jenifer marlo.webp " height="149px" width="240px"><br></div>
+          <img src="images/profile.png" id="profile-pic">
+               <label for="input-file" class="form-label"></label>
+               
+            
+            
+            <label id="my"></label>
             <div class="contact">
                 <h3 class="h3">Contact<hr></h3>
-                <p class="details"><i class="fa-solid fa-square-phone"></i>&nbsp;&nbsp;9988776655<br><br>
-                    <i class="fa-solid fa-square-envelope"></i>&nbsp;&nbsp;jenifer@gmail.com<br><br>
-                    <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;jenifer/321se221<br><br>
-                    <i class="fa-brands fa-github"></i>&nbsp;&nbsp;jenifer@7290Git-hub<br><br>
-                    <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Bengaluru&nbsp;INDIA<br>
-                </p>
+                <div class="left-contact">
+                    <div class="num">
+                    <div class="icon"><i class="fa-solid fa-square-phone"></i>
+                    </div>
+                <!-- <div class="">&nbsp;&nbsp;9988776655<br><br> -->
+                  <span id="userPhoneNo"></span><br><br>
+
+                <!-- </div> -->
             </div>
-            
-            <div class="education">
+            <div class="mail">
+                <div class="i_mail"><i class="fa-solid fa-square-envelope"></i></div>
+                <!-- <div class="mail">&nbsp;&nbsp;jenifer@gmail.com</div> -->
+                <span id="userGmailId"></span>
+            </div><br>
+                   <div class="linkedin">
+                    <div class="i_linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>&nbsp;
+                    </div>
+                    <!-- <div class="link_linkedin">&nbsp;&nbsp;jenifer/321se221</div> -->
+                    <span id="userLinkedInId"></span>
+                </div> 
+                   <div class="locality">
+                    <!-- <div class="i_locality">  <i class="fa-solid fa-location-dot"></i></div>
+                    <!-- <div class="locality-text">  &nbsp;&nbsp;Bengaluru&nbsp;INDIA<br></div> -->
+                     
+                    <label class="workExpDetail" id="poCollageCity"></label>
+                   </div>
+                   <div class="git">
+                    <div class="icon-git"><i class="fa-brands fa-github"></i></div>
+                    <!-- <div class="link-git">&nbsp;jenifer@7290Git-hub</div> -->
+                    <span id="userWebsite"></span>
+                   </div>
+                </div>
+                <div class="education">
                 <h3 class="h3">Education<hr></h3>
-                <p class="details"><i class="fa-solid fa-user-graduate"></i>&nbsp;&nbsp;Bachelor of science <br>IIIT Bangalore-2011-2015</p>
+                <div class="details">
+                  <div class="edu-detail">
+                    <div class="icon-edu"><i class="fa-solid fa-user-graduate"></i></div>
+                    
+                   <div class=""> <label class="workExpDetail" id="gradCollageName"></label></div>
+
+                  </div><br>
+                  <div class="po-edu-detail">
+                    <div class="icon-edu"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class=""><label class="workExpDetail" id="poCollageName"></label></div>
+
+                  </div>
+                   </div>
             </div>
-            <div class="skill">
-                <h3 class="h3">Skills<hr></h3>
-                <p class="details">Cloud Computing &nbsp; AWS<br><br>
-                    Operating System<br><br>
-                    Data Structure<br>
-                </p>
+        
+                <h3 class="h3">Skills<hr></h3><br>
+                <label id="skill" class="p-skill"></label>
+
+               </div>
+               <h3 class="h3">Languages<hr></h3>
+                <div class="language">
+                <label id="lang"></label>
             </div>
-            <div class="language">
-                <h3 class="h3">Languages<hr></h3>
-                <p class="details">English&nbsp;Hindi&nbsp;Kannada</p>
             </div>
-        </div>
+        
         <div class="right-container">
             <div class="name">
-                <h1 class="h1">Jenifer Marlo</h1>
+                <!-- <h1 class="h1">Jenifer Marlo</h1> -->
+                <div class="nameAndDes">
+                  <label class="userName"></label>
+                  <span id="userDesignation"></span>
+                </div>
                 
             </div>
             <div class="profssion">
-                <p>Software Engineer||&nbsp;Cloud Solutions||&nbsp;OS Developer</p>
+                <!-- <p>Software Engineer||&nbsp;Cloud Solutions||&nbsp;OS Developer</p> -->
             </div>
             <div class="profile">
-                <h3 class="profile">Profile Summary</h3>
-                <p>With over a 5 years of experience in Software Engineering, i bring
-                     to the table deep understanding of cloud Computing and data structure leading to 
-                    optimize search engine. </p>
-            </div>
+                <h3>Summary</h3>
+                  <label class="sum" id="role"></label>
+                 </div><br>
+                 
             <div class="work experience">
-                <h2 class="experience"><i class="fa-solid fa-briefcase">&nbsp;&nbsp;</i>Experience<hr></h2>
-                <h3>Software Engineer</h3>
-                <p> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAALVBMVEVHcExso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0LlRIQqAAAADnRSTlMA61sl1Xa6iEhnljcKpMWWgsgAAADVSURBVCiRrZLZDoQwCEWlldJF+f/PnQKtrXXmYRKJicphvWHbXjEfo/9O3M5qu3ugAuIPQSJgScfqahmuhqWF4fijGy3Msb4OV02TmUdlsDzQeSwXrjnt87BpW3hscGe3wsShweaYykpg00UdeBIKRDpRA22kKCUyT0bSqgwYZngOqGVX2MvqQAu8BtJVSHvpI1LitYqKkDJ5qeEpJynWRagN6L5xbuvaSKZRhzgLX9WyXIO5xw4K2mo7RKflUjxIVg0ReZ9XFoNA5hAfyKyUH6f5r30A4rsMNN7ffh0AAAAASUVORK5CYII"
-                     height="18px" width="18px"/>
-                    Oracle-Austin&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&&nbsp;&nbsp;Jan 2015-jan 2016
-                <ul>
+              <i class="fa-solid fa-briefcase">&nbsp;&nbsp;</i>Experience<hr>
+                <!-- <h3>Software Engineer</h3> -->
+                 
+                
+                     <div class="company-name-dates">
+                        <!-- <div class="icon-company"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAALVBMVEVHcExso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0Jso0LlRIQqAAAADnRSTlMA61sl1Xa6iEhnljcKpMWWgsgAAADVSURBVCiRrZLZDoQwCEWlldJF+f/PnQKtrXXmYRKJicphvWHbXjEfo/9O3M5qu3ugAuIPQSJgScfqahmuhqWF4fijGy3Msb4OV02TmUdlsDzQeSwXrjnt87BpW3hscGe3wsShweaYykpg00UdeBIKRDpRA22kKCUyT0bSqgwYZngOqGVX2MvqQAu8BtJVSHvpI1LitYqKkDJ5qeEpJynWRagN6L5xbuvaSKZRhzgLX9WyXIO5xw4K2mo7RKflUjxIVg0ReZ9XFoNA5hAfyKyUH6f5r30A4rsMNN7ffh0AAAAASUVORK5CYII"
+                            height="18px" width="18px"/></div> -->
+                        <div class="">
+                          <label id="exp"></label><br>
+                        </div>
+                            <label id="date" class="join-date"></label>
+                              
+                            
+                     </div>
+                    
+                <!-- <ul>
                     <li>Develope a custom Database oracle solution for finance client,increasing data processing speed by 40%</li><br>
                     <li>Assited in the integration of cloud services.</li>
-                </ul>
+                </ul> -->
                 <hr>
             </p><br>
-            <h3>Software Engineer ||</h3>
-            <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABnRSTlMAAAAAAABupgeRAAAAWklEQVR4AWP4FKBEJPrip8wABrV7GOp3EYtGhgWjFoxaMGrBqAXf/OSIRD995CEWVO9hqN1FLBoOYNlnotF3iI7/O4lHQOVL3hONPo9agB2NWjBqwagFoxYAAB2zMZ7bQW2tAAAAAElFTkSuQmCC"
-                 height="16px" width="15px"/>&nbsp;&nbsp;Microsoft&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&&nbsp;&nbsp;Feb 2016-jan 2020
-            <ul>
-                <li>Implemented new application feature that was adopted 80% users.</li><br>
-                <li>Optimize Database queries  in Azure SQL Database which improved application performance by 25 %.</li>
-            </ul>
-            <hr>
+            
+        
+         <hr>
         </p>
-            </div>
+            </div><br><br>
             <div class="achivement">
-                <h3 class="experience"><i class="fa-solid fa-trophy">&nbsp;&nbsp;</i>Achivement</h3>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;Optimization Expert Award in Microsoft.</p>
+                <h3 class="experience"><i class="fa-solid fa-trophy">&nbsp;&nbsp;</i>Achievement</h3><hr>
+                <label id="achieve" class="success"></label>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
             </div>
+            
         </div>
     </div>
-   
+    <!-- <script src="script.js"></script> -->
+   <script src="index.js"></script>
 </body>
 </html>

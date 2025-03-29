@@ -1,50 +1,54 @@
 .container{
-    height: 58rem;
+    height: 54rem;
     width: 45rem;
-background-color: rgba(255, 255, 255, 0.204);
-border-radius: 1rem;
+    border: solid white;
+    border-radius: 1rem;
+}
+.top{
+    width: 45rem;
+    height: 12.5rem;
+    border: solid white;
+    background-color: white;
 
 }
+
 .name{
     text-align: center;
 }
-.role{
+
+.user-profession{
     text-align: center;
 }
-.contact{
-    text-align: center;
-}
 
-
-.personal_info{
-    background-color: white;
-    height: 9.5rem;
-    border-radius: 1rem;
-
-}
-.summary{
-    height: 7rem;
-    margin-left: 1rem;
-
-}
-
-.company{
-    font-size: 1.1rem;
-}
-.work-experience{
+.personal-contact{
     display: flex;
+    justify-content: space-around;
+}
+
+.social-media-contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.summary{
+    height: 8rem;
+    width: 45rem;
     background-color: white;
+    /* border: solid black; */
 }
-.work{
-    margin-left: 1rem;
+
+.middle{
+    width: 45rem;
+    height: 20rem;
+    background-color: white;
+    /* margin-top: 7rem; */
+    text-align: center;
+
 }
-.edu{
-    margin-left: 1rem;
-}
-.years{
-    width: 40rem;
-    height: 22rem;
-}
-.certificates{
-    background-color:white;
+
+.last{
+    width: 45rem;
+    height: 9.5rem;
+    background-color: white;
+
 }

@@ -1,6 +1,6 @@
 .container{
-    height: 50rem;
-    width: 40rem;
+    height: 54rem;
+    width: 45rem;
     background-color: rgba(59, 58, 58, 0.194);
     margin-left: 2rem;
     display: flex;
@@ -8,12 +8,14 @@
     
 }
 
+
 .left-container{
-    height: 50rem;
+    height: 54rem;
     width: 15rem;
     background-color: rgba(182, 136, 225, 0.207);
     border-radius: 1rem;
 }
+
 
 .img{
     height: 9rem;
@@ -21,7 +23,7 @@
     background-color: rgba(68, 68, 167, 0.633);
 }
 .right-container{
-    height: 50rem;
+    height: 54rem;
     width: 30rem;
     background-color: rgba(0, 0, 255, 0.132);
     border-radius: 1rem;
@@ -31,17 +33,73 @@
     text-align: center;
     background-color: white;
 }
+
+
 .h1{
     text-align: center;
 }
 
 .profile{
     margin-left: 0.4rem;
+    
 }
+
+
+
+.left-contact{
+    margin-left: 1rem;
+}
+
 
 .details{
     margin-left: 1rem;
+    margin-bottom: 0.5rem;
 }
+
+
+
+.edu-detail{
+    display: flex;
+}
+.po-edu-detail{
+    display: flex;
+}
+
+
 .experience{
     margin-left: 0.7rem;
+    /* background-color: red; */
+}.projects{
+    margin-left: 1rem;
+}
+
+
+.company-name-dates{
+    display: flex;
+}
+
+.company2-name-dates{
+    display: flex;
+}
+
+
+.num{
+    display: flex;
+}
+.mail{
+    display: flex;
+}
+.linkedin{
+    display: flex;
+    
+}
+.git{
+    display:flex;
+
+}
+.locality{
+    display: flex;
+}
+.language{
+    display: flex;
 }

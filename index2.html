@@ -3,86 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Templete</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index2.css"/>
+    <link rel="stylesheet" href="userDetails.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="personal_info">
-            <div class="name">
-                <h1>Devika Gupta</h1>
-            </div>
-        <div class="role">
-            <h3>Dgital Marketing</h3>
-        </div>
-        <div class="contact">
-            <i class="fa-solid fa-phone"></i>+919999999999</i> &nbsp;&nbsp; 
-                &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;    &nbsp;&nbsp; &nbsp;&nbsp;  
-                <i class="fa-regular fa-square-envelope"></i> devika_gupta@gmail.com</p>
-            <i class="fa-brands fa-linkedin"></i> devika22?23111 &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  
-                <i class="fa-brands fa-github"></i> devika757575
-            
-        </div>
-        </div>
-        <div class="summary">
-            <h4>Summary</h4><p>A digital marketing professional focuses on creating, managing, and 
-                optimizing online marketing strategies to promote businesses, products, 
-                or services. They use various digital channels 
-                like search engines (SEO/SEM), social media, email campaigns, websites etc.
-            </p>
-        </div>
-        <div class="work-experience">
+    <div class="detailsAndButton">
+        <div class="personalAndEducation">
+          <div class="personalDetails">
+            <h2>Personal Details</h2>
+            <label for="userName" class="form-label">Name :</label>
            
-            <div class="years">
-                <h2 class="work"><i class="fa-solid fa-briefcase"></i>&nbsp;Work Experience</h2>
-                <ul>
-                    <li><p class="company">jan 2020-jan 2021 :: &nbsp;&nbsp;Bucksence inc.&nbsp;&nbsp;&nbsp;
-                        Digital Marketing Analyst</p>
-                        <p>Using tools like Google Analytics to monitor campaign performance and make data-driven decisions.</p>
-                    </li>
-                    <li><p class="company">Feb 2021-Feb 2022 :: &nbsp;&nbsp;Actol Interactive 
-                        Lead Data scientist</p>
-                        <p>Model Development & Deployment:Develop advanced machine learning or AI models to address business challenges.
-                        </p>
-                    </li>
-                    <li><p class="company">April 2022-present :: &nbsp;&nbsp;Zomato&nbsp;
-                        SEO and SEM:</p>
-                        <p>Implement Search Engine Optimization (SEO) techniques to improve organic rankings.</p>
-                    </li>
+            <input type="text" placeholder="Enter your Name" id="userName"  class="form-control">
+            <label for="userProfession">Profession</label>
+            <input
+              type="text"
+              id="userProfession"
+              placeholder="Enter your profession"
+            />
+            <label for="userEmail">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your Email id"
+              id="userEmail"
+            />
+            <label for="userContact">Contact</label>
+            <input
+              type="text"
+              placeholder="Enter your contact number"
+              id="userContact"
+            />
+            <label for="userLinkedIn">LinkedIn</label>
+            <input
+              type="text"
+              placeholder="Enter your LinkedIn Link"
+              id="userLinkedIn"
+            />
+            <label for="userGitHub">GitHub</label>
+            <input
+              type="text"
+              placeholder="Enter your GitHub Link"
+              id="userGitHub"
+            />
+          </div>
+  
+          <div class="educationDetails">
+            <h2>Education</h2>
+  
+            <label for="userGrad">Graduation</label>
+            <input
+              type="text"
+              id="userGrad"
+              placeholder="Enter your collage name"
+            />
+           
+  
+            <select id="city" name="city">
+              <option value="chooseCity">Choose The City</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Banglore">Banglore</option>
+              <option value="Kanpur">Kanpur</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Goa">Goa</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Agra">Agra</option>
+            </select>
+            <label for="post">Post-Graduation</label>
+            <input
+              type="text"
+              placeholder="Enter your collage name"
+              id="userPostGrad"
+            />
+  
+            <select id="city1" name="city">
+              <option value="chooseCity">Choose The City</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Banglore">Banglore</option>
+              <option value="Kanpur">Kanpur</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Nashik">Nashik</option>
+              <option value="Pune">Pune</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Goa">Goa</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Agra">Agra</option>
+            </select>
+  
+            <h2>Projects</h2>
+            <label for="your-project"></label>
+  
+            <textarea
+              placeholder="Enter your project details here"
+              rows="4" id="your-project"
+            ></textarea>
+            <!-- <input type="file" id="my-image" accept="image/*"/> -->
+            <!-- <div id="display_image"></div> -->
+            <!-- <div class="hero">
+            
+              
+                 <input type="file" accept="image/*" id="input-file">
+                 </div> -->
+            
+          </div>
+  
+          <div class="skilll">
+            <h2>Skill</h2>
+           <div class="skilll">
+            <label for="mySkill"></label>
+              <textarea   id="mySkill" placeholder="Enter your skill here" rows="4" ></textarea>
+              <h2>Languages</h2>
+              <input type="text" id="len" placeholder="Enter language"/>
+             
+            </div>
+           
+            
+  
+            <h2>Experience details</h2>
+  
+            <div id="experienceAndButton">
+              <label for="experieneDetilsUser"></label>
+              <textarea
+                placeholder="Enter your experience"
+                rows="4"
+                class="form-control work-experiance"
+                id="experieneDetilsUser"
+              >
+            </textarea>
+            
+              <button
+                onclick="addNewFields()"
+                id="addNewFields"
+                class="experienceAndButton"
+              >
+                Add
+              </button>
+            </div>
+            <h2>Summary</h2>
+            <textarea placeholder="Enter your summary here" rows="4" id="summary"></textarea>
+            <h2>Achievement</h2>
+            <label for="achivement"></label>
+            <input type="text" id="achivement">
+          </div>
+          
+        </div>
+        <button class="previewButton" onclick="generateResume()">Preview</button>
+      </div> <br><br>
+      <!-- form-END -->
 
-                </ul>
+      <div class="container">
+        <div class="top">
+          <div class="name">
+            <h1>
+              <label id="Name"></label>
+            </h1>
+          </div>
+          <div class="user-profession">
+            <h3>
+              <label id="position"></label>
+            </h3>
+          </div>
+          <div class="personal-contact">
+            <div class="mobile">
+              <i class="fa-solid fa-square-phone"></i><label id="number"></label>
             </div>
-            
-        </div>
-        <div class="education">
-            <h3 class="edu"><i class="fa-solid fa-user-graduate">&nbsp;&nbsp;</i>Education</h3>
-            <div class="edu-years">
-                <ul>
-                    <li> 2017-2020 :: &nbsp;&nbsp;Amity University, Noida  &nbsp;&nbsp;Grade : A </li>
-                </ul>
-               
+            <div class="email">
+              <i class="fa-solid fa-square-envelope"></i><label id="mail"></label>
             </div>
-           
-        </div>
-        <div class="certificates">
-            <h3 class="edu"><i class="fa-solid fa-user-graduate">&nbsp;&nbsp;</i>Certificates</h3>
-            <ul><li>Google Digital Marketing & E-commerce Professional Certificate : Grade A</li>
-            <li>Adobe Marketing Specialist Professional Certificate : Grade A</li>
-        </ul>
-        </div>
+            </div><br>
+            <div class="social-media-contact">
+              <div class="linkedin">
+                <i class="fa-brands fa-linkedin"></i><label id="link-linkedin"></label>
+              </div>
+              <div class="GitHub">
+                <i class="fa-brands fa-square-github"></i><label id="git"></label>
+              </div>
+            </div>
+          </div>
+          <div class="summary">
+            <h3>Summary</h3>
+            <label id="summ"></label>
+          </div>
+          <!-- class=top= completed -->
+           <!-- class = middle-started -->
+
         
-        <div class="sills">
-            <h3 class="edu">Skills</h3>
-            <ul>
-                <li>Microsoft Suite</li>
-                <li>Tableau</li>
-                <li>Design Tools-Adobe photoshop</li>
-        
-            </ul>
+        <div class="middle">
+          <h3>Education</h3>
+          <div class="education">
+            <i class="fa-solid fa-user-graduate"></i><label id="grad-edu"></label>
+            <!-- <i class="fa-solid fa-user-graduate"></i><label id="master-edu"></label> -->
+          </div>
+          <h3>Skill</h3>
+          <div class="relevent-skill">
+            <label id="role" class="SKILL"></label>
+          </div>
+          <h3>Projects</h3>
+          <div class="my-projects">
+            <label id="pro" class="PRO"></label>
+          </div>
+          <h3>Work-Experience</h3>
+          <div class="sum">
+            <label id="EXP" ></label>
+          </div>
+
         </div>
-    </div>
-    
+        <div class="last">
+          <h3>Languages</h3>
+          <label id="lang"></label>
+          <h3>Achievement</h3>
+          <label id="achieve"></label>
+
+        </div>
+      </div>
+    <script src="script.js"></script>
 </body>
 </html>
